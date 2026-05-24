@@ -1,0 +1,14 @@
+﻿name: Daily Redeploy
+
+on:
+  schedule:
+    - cron: '0 21 * * 1-5'
+  workflow_dispatch:
+
+jobs:
+  redeploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger Render Deploy
+        run: |
+          curl -X POST ${{ secrets.RENDER_DEPLOY_HOOK }}
