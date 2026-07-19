@@ -133,7 +133,7 @@ def build_rank_table(etf_list, sector_names=None):
 
 @app.get("/api/theme")
 def get_theme():
-    return build_rank_table(THEME_ETF_LIST)
+    return build_rank_table(THEME_ETF_LIST, THEME_NAMES)
 
 @app.get("/api/sector")
 def get_sector():
