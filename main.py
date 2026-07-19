@@ -39,7 +39,7 @@ def calc_rs_score_at(close, offset=0):
         r126 = float(close.pct_change(126).iloc[idx])
         r189 = float(close.pct_change(189).iloc[idx])
         r252 = float(close.pct_change(252).iloc[idx])
-        score = (r63*2 + r126 + r189 + r252) / 5
+        score = (r63*4 + r126*2 + r189*1 + r252*1) / 8
         return None if pd.isna(score) else score
     except:
         return None
