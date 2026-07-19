@@ -31,6 +31,9 @@ SECTOR_NAMES = {
     "RSPG": "Energy", "RSPH": "Health Care", "RSPR": "Real Estate",
     "RSPS": "Cons Staples", "RSPF": "Financials", "RSPM": "Materials",
     "RSPC": "Comm Svcs", "RSPN": "Industrials",
+}
+
+THEME_NAMES = {
     "WGMI": "BTC採掘",
     "BLOK": "ブロックチェーン",
     "ICLN": "クリーンエネルギー",
